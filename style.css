@@ -134,6 +134,7 @@ header .navbar ul li a{
 
 header .navbar ul li a:hover{
     background:var(--yellow);
+    box-shadow:0 0 30px white;
 }
 
 #menu{

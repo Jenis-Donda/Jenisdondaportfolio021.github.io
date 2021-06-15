@@ -230,7 +230,7 @@ header .navbar ul li a:hover{
 }
 
 .education{
-    background:url("education.JFIF");
+    background:url("education.jfif");
 }
 .education .box-container{
     display: flex;

@@ -154,7 +154,7 @@ header .navbar ul li a:hover{
     justify-content: center;
     flex-flow: column;
     padding:0 15rem;
-    background:url("D:/portfolio1.jpg");
+    background:url("portfolio1.jpg");
     width:100%;
     height:auto;
 }

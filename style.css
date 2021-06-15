@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
-:root{
-    --yellow:#603F83FF;
-}
+
 
 *{
     font-family: 'Nunito', sans-serif;
@@ -15,8 +13,8 @@
 }
 
 *::selection{
-    background:var(--yellow);
-    color:#333;
+    background:black;
+    color:white;
 }
 
 html{
@@ -24,17 +22,7 @@ html{
     overflow-x: hidden;
 }
 
-html::-webkit-scrollbar{
-    width:1.4rem;
-}
 
-html::-webkit-scrollbar-track{
-    background:white;
-}
-
-html::-webkit-scrollbar-thumb{
-    background:var(--yellow);
-}
 
 body{
     background:#C7D3D4FF;
@@ -49,8 +37,8 @@ section{
 
 .btn{
     padding:.7rem 3rem;
-    background:#603F83FF;
-    color:white;
+    background:#AA1111;
+    color:rgb(252, 245, 188);
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -63,7 +51,7 @@ section{
 }
 
 .btn:hover{
-    background:var(--yellow);
+    background:lightseagreen;
 }
 
 .heading{
@@ -73,10 +61,12 @@ section{
     padding:1rem;
     border-bottom: .5rem solid black;
     color:#222;
+    font-family:Algerian;
 }
 
 .heading span{
-    color:var(--yellow);
+    color:#603F83FF;
+    font-family:Algerian;
 }
 
 header{
@@ -96,10 +86,10 @@ header{
 header .user img{
     height:17rem;
     width:17rem;
-    border-radius: 50%;
+    border-radius: 70%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--yellow);
+    border:.7rem solid #FFFF81;
 }
 
 header .user .name{
@@ -126,15 +116,16 @@ header .navbar ul li a{
     display: block;
     padding:1rem;
     margin:1.5rem 0;
-    background:#333;
+    background:#555555;
     color:#fff;
     font-size: 2rem;
     border-radius: 5rem;
 }
 
 header .navbar ul li a:hover{
-    background:var(--yellow);
+    background:#EBEBEB;
     box-shadow:0 0 30px white;
+    color:black;
 }
 
 #menu{
@@ -161,24 +152,27 @@ header .navbar ul li a:hover{
 
 .home h3{
     font-size: 2.5rem;
-    color:black;
+    color:rgb(252, 242, 159);
 }
 
 .home h1{
     font-size:5rem;
-    color:black;
+    color:white;
 }
 
 .home h1 span{
-    color:var(--yellow);
+    color:rgb(32, 224, 224);
 }
 
 .home p{
     font-size:2rem;
-    color:black;
+    color:#f8eaea;
     padding: 1rem 0;
 }
 
+.about{
+    background:url("about.jpg");
+}
 .about .row{
     display: flex;
     align-items: center;
@@ -195,17 +189,19 @@ header .navbar ul li a:hover{
 
 .about .row .info h3{
     font-size: 2rem;
-    color:var(--yellow);
+    color:#603F83FF;
     padding:1rem 0;
     font-weight: normal;
     font-family:arial;
+    font-weight: 400;
 }
 
 
 .about .row .info h3 span{
     color:black;
-    padding:0 .5rem;
+    padding:0 .7rem;
     font-family:arial;
+    font-weight:bold;
 }
 
 .about .row .counter{
@@ -233,6 +229,9 @@ header .navbar ul li a:hover{
     color:#fff;
 }
 
+.education{
+    background:url("education.JFIF");
+}
 .education .box-container{
     display: flex;
     align-items: center;
@@ -281,7 +280,7 @@ header .navbar ul li a:hover{
     text-align: center;
     font-size: 2rem;
     color:#fff;
-    background:var(--yellow);
+    background:#603F83FF;
 }
 
 * {box-sizing: border-box}
@@ -298,12 +297,17 @@ header .navbar ul li a:hover{
   padding-bottom: 10px;
   color: white;
   padding-left:90px;
+  background:#CBC3E3;
 }
 
 .html {width: 90%; background-color: #04AA6D;}
 .css {width: 80%; background-color: #2196F3;}
 .js {width: 65%; background-color: #f44336;}
 .php {width: 60%; background-color: #808080;}
+
+.portfolio{
+    background:url("D:/portbg1.jpg");
+}
 .portfolio .box-container{
     display: flex;
     align-items: center;
@@ -328,9 +332,12 @@ header .navbar ul li a:hover{
 }
 
 .portfolio .box-container .box:hover img{
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
+.contact{
+  background:url("contact.jpg");
+}
 .contact .row{
     display: flex;
     align-items: center;
@@ -373,7 +380,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content .title{
     text-transform: uppercase;
-    color:#000080;
+    color:rgb(152, 219, 236);
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -382,14 +389,14 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color:black;
+    color:white;
     padding:1rem 0;
     font-weight: normal;
 }
 
 .contact .row .content .info h3 i{
     padding-right: 1rem;
-    color:var(--yellow);
+    color:rgb(240, 240, 25);
 }
 
 .top{
@@ -400,7 +407,24 @@ header .navbar ul li a:hover{
 }
 
 
-  
+footer{
+    text-align: center;
+    background:#050505dc;
+    padding: 20px 23px;
+    color: white;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1.5px;
+}
+
+footer p{
+    margin-bottom: 8px;
+    font-family:cursive;
+}
+
+footer span{
+    color: aqua;
+}
 
 
 /* media queries  */

@@ -306,7 +306,7 @@ header .navbar ul li a:hover{
 .php {width: 60%; background-color: #808080;}
 
 .portfolio{
-    background:url("D:/portbg1.jpg");
+    background:url("portbg1.jpg");
 }
 .portfolio .box-container{
     display: flex;
